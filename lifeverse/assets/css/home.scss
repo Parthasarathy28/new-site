@@ -1,0 +1,112 @@
+.sidebar-body {
+    .sidebar-body-menu  {
+        
+       
+            a {
+                position: relative;
+                padding: 8px 0;
+                color: #8a8a8b;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 2.43;
+
+                .icon{
+                    background-color: #212e4a; 
+                    border-radius: 5px; 
+                    border: none;
+                    border-style: ridge; 
+                    color: white;
+                    border-style: none;
+                    align-items: center;
+                    height: 30px;
+                    width: 30px;
+                    /* font-size: 29px; */
+                    padding: 5px;
+                }
+                &:hover {
+                     .icon {
+                        background-color: #E0B704; 
+                        border-radius: 5px; 
+                        border: none;
+                        border-style: ridge; 
+                        color: white;
+                        border-style: none;
+                        align-items: center;
+                        height: 30px;
+                        width: 30px;
+                        /* font-size: 29px; */
+                        padding: 5px;
+                    }
+                   
+                }
+               
+            }
+          
+            a.active{
+               
+                .icon {
+                    background-color: #E0B704; 
+                    border-radius: 5px; 
+                    border: none;
+                    border-style: ridge; 
+                    color: white;
+                    border-style: none;
+                    align-items: center;
+                    height: 30px;
+                    width: 30px;
+                    /* font-size: 29px; */
+                    padding: 5px;
+                }
+            }
+        
+    }
+}
+
+
+$primary: #4060ff;
+$light: #fff;
+body {
+  font-family: poppins, sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.tabs-wrapper {
+  box-shadow: 2px 1px 20px #ddd;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  height: 300px;
+  max-width: 500px;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.nav-tabs {
+  display: flex;
+  li {
+    border: 1px solid #ddd;
+  }
+}
+
+.tab {
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease 0s;
+}
+
+.tab.is-active {
+  background: $primary;
+  color: $light;
+}
+.tab-panel {
+  display: none;
+  p {
+    line-height: 1.6;
+  }
+  &.is-active {
+    display: block;
+  }
+}
